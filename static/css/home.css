@@ -31,6 +31,16 @@ div.header
   background-color:#282828;
 
   color:#f1eee8;
+
+  cursor: pointer;
+}
+div.header:hover
+{
+  color:#f1fff8;
+}
+div.header:active
+{
+  color:#e1ddd8;
 }
 div.main
 {
