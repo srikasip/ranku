@@ -1,0 +1,22 @@
+This purpose is to help me stay organized navigating the files and stuffs. 
+
+So here is the deal: 
+
+* Procfile houses the terminal gunicorn command to run our python server as soon as the content is loaded onto a server. 
+
+* requirements.txt, as you can guess, has the pre-reqs to be downloaded on a new server for the application to function correctly.  these are the dependencies. 
+
+* StaticHelper helps serve static content (think images, js files, json files, videos, this kind of thing)
+
+* Dynamic Helper serves the html content.  it specifically looks for a <template> tag and fills in the content from the file extension:
+  - Name Assumptions and Conventions for using the template tag:
+    - <svgtemplate> is to an svg file which is always in the image folder
+    - <template> is to a specific template</template>
+    - i think template parts should be led off with a p_ for part
+
+
+* Files for the pages that a user sees are in the static folder
+
+* Within any folder in static, there is a folder for CSS files, JS files, and static assets.  
+
+* add_section.py is a helpful python script to write a section that can be added to an HTML file for design purposes. The idea is...add a section. let it be broken up and add an appropriate JS and CSS file and link them all and make sure the prereq structures are all taken care of.
