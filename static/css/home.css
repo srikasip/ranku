@@ -153,3 +153,17 @@ button#rankem:active
     width:15em;
   }
 }
+
+@media only screen and (max-height:500px){
+  html, body
+  {
+    background-position: bottom left;
+  }
+  div.header{
+    height:50px;
+  }
+  span.logo{
+    line-height:50px;
+    height:50px;
+  }
+}
