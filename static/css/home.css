@@ -66,8 +66,11 @@ span.logo
   display:block;
   padding:0;
   padding-left:16px;
-  padding-top:0.5em;
+  
   font-size:2em;
+  height:100%;
+  line-height:10vh;
+  vertical-align: middle;
 }
 span.logo.strong
 {
