@@ -3,21 +3,29 @@ html, body{
   width:100%;
   padding:0;
   margin:0;
-  font-family: "Syncopate", serif;
+  font-family: "Open Sans", serif;
 
-  background-image:url("/static/images/list.jpg");
-  background-position: center center;
-  background-size: 100% auto;
+  background-image:url("/static/images/espresso.jpg");
+  background-position: bottom center;
+  background-size: cover;
   background-repeat:none;
+  box-sizing: border-box;
+  background-attachment: fixed;
 }
-
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.fancyFont
+{
+  font-family:"Syncopate";
+}
 .overlay
 {
   position:absolute;
   top:0;
   left:0;
   z-index:10;
-  background-color:rgba(40,40,40,0.8);
+  background-color:rgba(40,40,40,0);
   height:100%;
   width:100%;
 }
@@ -28,7 +36,7 @@ div.header
   float:none;
 
   height:10vh;
-  background-color:#282828;
+  background-color:rgba(40,40,40,0.6);
 
   color:#f1eee8;
 
@@ -60,8 +68,12 @@ span.logo
   padding-left:16px;
   padding-top:0.5em;
   font-size:2em;
+}
+span.logo.strong
+{
   font-weight:700;
 }
+
 div.title_section
 {
   margin-top:3em;
@@ -70,40 +82,71 @@ div.title_section
   margin-left: auto;
   margin-right:auto;
 }
-#listable
+input#listable
 {
   border:none;
   border-bottom:2px Solid #eee;
   background-color:transparent;
+  width:30em;
 }
 
-#howto
+div#howto
 {
   margin-top:4em;
-  font-size:12pt;
-  font-family:"Open Sans", serif;
+  font-size:0.8em;
   text-align:left;
 }
 
 div.title_section strong
 {
-  font-weight:700;
+  font-weight:600;
 }
 
-#rankem
+button#rankem
 {
   background-color:#f1eee8;
   color:#282828;
   border:none;
   border-radius:10px;
+  font-size: 1em;
+  cursor: pointer;
+  width:10em;
+  height:2.5em;
+  font-family:inherit;
 }
-#rankem:hover
+button#rankem:hover
 {
   background-color:#f1fff8;
   color:#181818;
 }
-#rankem:active
+button#rankem:active
 {
   background-color:#282828;
   color:#f1fff8;
+}
+
+
+@media only screen and (max-width: 840px) and (min-width: 422px){
+  div.title_section
+  {
+    width:100%;
+    padding-left:32px;
+    padding-right:32px;
+  }
+  input#listable
+  {
+    width:15em;
+  }
+}
+@media only screen and (max-width: 422px){
+  div.title_section
+  {
+    width:100%;
+    padding-left:8px;
+    padding-right:8px;
+  }
+  input#listable
+  {
+    width:15em;
+  }
 }
