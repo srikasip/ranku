@@ -85,12 +85,15 @@ div.title_section
   margin-left: auto;
   margin-right:auto;
 }
-input#listable
+input.listable
 {
+  font-family:"Open Sans", Sans;
   border:none;
   border-bottom:2px Solid #eee;
   background-color:transparent;
-  width:30em;
+  width:15em;
+  font-size:inherit;
+  color:inherit;
 }
 
 div#howto
@@ -128,8 +131,22 @@ button#rankem:active
   color:#f1fff8;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
-@media only screen and (max-width: 840px) and (min-width: 422px){
+.fadedFont
+{
+  color:#000;
+  opacity:0.75;
+  
+}
+
+
+@media only screen and (max-width: 878px) and (min-width: 436px){
   div.title_section
   {
     width:100%;
@@ -138,10 +155,10 @@ button#rankem:active
   }
   input#listable
   {
-    width:15em;
+    width:40vw;
   }
 }
-@media only screen and (max-width: 422px){
+@media only screen and (max-width: 436px){
   div.title_section
   {
     width:100%;
@@ -150,7 +167,7 @@ button#rankem:active
   }
   input#listable
   {
-    width:15em;
+    width:7.5em;
   }
 }
 
