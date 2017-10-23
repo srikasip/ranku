@@ -22,12 +22,20 @@ select:focus,
 textarea:focus,
 button:focus{outline:none;}
 .fadedFont{color:#000;opacity:0.75;}
+.smallBreak{display:none;}
 @media only screen and (max-width:878px) and (min-width:436px){div.title_section{width:100%;padding-left:32px;padding-right:32px;}
 input#listable{width:40vw;}
 }
-@media only screen and (max-width:436px){div.title_section{width:100%;padding-left:8px;padding-right:8px;}
+@media only screen and (max-width:436px) and (min-width:390px){div.title_section{width:100%;padding-left:8px;padding-right:8px;}
 input#listable{width:7.5em;}
 }
+@media only screen and (max-width:390px){
+  div.title_section{width:100%;padding-left:8px;padding-right:8px;}
+  .smallBreak{display:inline;}
+  #listable{width:40vw;}
+  button#rankem{float:none; margin-left:auto; margin-right:auto; width:100%;}
+}
+
 @media only screen and (max-height:500px){html, body{background-position:bottom left;}
 div.header{height:50px;}
 span.logo{line-height:50px;height:50px;}
