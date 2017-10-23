@@ -1,200 +1,34 @@
-html, body{
-  height:100%;
-  width:100%;
-  padding:0;
-  margin:0;
-  font-family: "Open Sans", serif;
-
-  background-image:url("/static/images/espresso.jpg");
-  background-position: bottom center;
-  background-size: cover;
-  background-repeat:none;
-  box-sizing: border-box;
-  background-attachment: fixed;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-.fancyFont
-{
-  font-family:"Syncopate";
-}
-.overlay
-{
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:10;
-  background-color:rgba(40,40,40,0);
-  height:100%;
-  width:100%;
-}
-
-div.header
-{
-  width:100%;
-  float:none;
-
-  height:10vh;
-  background-color:rgba(40,40,40,0.6);
-
-  color:#f1eee8;
-
-  cursor: pointer;
-}
-div.header:hover
-{
-  color:#f1fff8;
-}
-div.header:active
-{
-  color:#e1ddd8;
-}
-div.main
-{
-  height:90vh;
-  width:100%;
-  float:none;
-  text-align:center;
-  color:#f1eee8;
-
-  font-size:1.5em;
-  padding:32px;
-}
-span.logo
-{
-  display:block;
-  padding:0;
-  padding-left:16px;
-  
-  font-size:2em;
-  height:100%;
-  line-height:10vh;
-  vertical-align: middle;
-}
-span.logo.strong
-{
-  font-weight:700;
-}
-
-div.title_section
-{
-  margin-top:3em;
-  margin-bottom:3em;
-  width:60%;
-  margin-left: auto;
-  margin-right:auto;
-}
-input.listable
-{
-  font-family:"Open Sans", Sans;
-  border:none;
-  border-bottom:2px Solid #eee;
-  background-color:transparent;
-  width:15em;
-  font-size:inherit;
-  color:inherit;
-}
-div.messageAlert
-{
-  width:100%;
-  padding-top:0.5em;
-  padding-bottom:0.5em;
-  background-color:#f4ad5b;
-  color:#282828;
-  text-align: center;
-  font-size:0.75em;
-  display:none;
-}
-div#howto
-{
-  margin-top:4em;
-  font-size:0.8em;
-  text-align:left;
-}
-
-div.title_section strong
-{
-  font-weight:600;
-}
-
-div#buttonHolder
-{
-  margin-top:0.5em;
-}
-button#rankem
-{
-  background-color:#f1eee8;
-  color:#282828;
-  border:none;
-  border-radius:10px;
-  font-size: 1em;
-  cursor: pointer;
-  width:10em;
-  height:2.5em;
-  font-family:inherit;
-}
-button#rankem:hover
-{
-  background-color:#f1fff8;
-  color:#181818;
-}
-button#rankem:active
-{
-  background-color:#282828;
-  color:#f1fff8;
-}
-
+html, body{height:100%;width:100%;padding:0;margin:0;font-family:"Open Sans", serif;background-image:url("/static/images/espresso.jpg");background-position:bottom center;background-size:cover;background-repeat:none;box-sizing:border-box;background-attachment:fixed;}
+*, *:before, *:after{box-sizing:inherit;}
+.fancyFont{font-family:"Syncopate";}
+.overlay{position:absolute;top:0;left:0;z-index:10;background-color:rgba(40,40,40,0);height:100%;width:100%;}
+div.header{width:100%;float:none;height:10vh;background-color:rgba(40,40,40,0.6);color:#f1eee8;cursor:pointer;}
+div.header:hover{color:#f1fff8;}
+div.header:active{color:#e1ddd8;}
+div.main{height:90vh;width:100%;float:none;text-align:center;color:#f1eee8;font-size:1.5em;padding:32px;}
+span.logo{display:block;padding:0;padding-left:16px;font-size:2em;height:100%;line-height:10vh;vertical-align:middle;}
+span.logo.strong{font-weight:700;}
+div.title_section{margin-top:3em;margin-bottom:3em;width:60%;margin-left:auto;margin-right:auto;}
+input.listable{font-family:"Open Sans", Sans;border:none;border-bottom:2px Solid #eee;background-color:transparent;width:15em;font-size:inherit;color:inherit;}
+div.messageAlert{width:100%;padding-top:0.5em;padding-bottom:0.5em;background-color:#f4ad5b;color:#282828;text-align:center;font-size:0.75em;display:none;}
+div#howto{margin-top:4em;font-size:0.8em;text-align:left;}
+div.title_section strong{font-weight:600;}
+div#buttonHolder{margin-top:0.5em;}
+button#rankem{background-color:#f1eee8;color:#282828;border:none;border-radius:10px;font-size:1em;cursor:pointer;width:10em;height:2.5em;font-family:inherit;}
+button#rankem:hover{background-color:#f1fff8;color:#181818;}
+button#rankem:active{background-color:#282828;color:#f1fff8;}
 input:focus,
 select:focus,
 textarea:focus,
-button:focus {
-    outline: none;
+button:focus{outline:none;}
+.fadedFont{color:#000;opacity:0.75;}
+@media only screen and (max-width:878px) and (min-width:436px){div.title_section{width:100%;padding-left:32px;padding-right:32px;}
+input#listable{width:40vw;}
 }
-
-.fadedFont
-{
-  color:#000;
-  opacity:0.75;
-  
+@media only screen and (max-width:436px){div.title_section{width:100%;padding-left:8px;padding-right:8px;}
+input#listable{width:7.5em;}
 }
-
-
-@media only screen and (max-width: 878px) and (min-width: 436px){
-  div.title_section
-  {
-    width:100%;
-    padding-left:32px;
-    padding-right:32px;
-  }
-  input#listable
-  {
-    width:40vw;
-  }
-}
-@media only screen and (max-width: 436px){
-  div.title_section
-  {
-    width:100%;
-    padding-left:8px;
-    padding-right:8px;
-  }
-  input#listable
-  {
-    width:7.5em;
-  }
-}
-
-@media only screen and (max-height:500px){
-  html, body
-  {
-    background-position: bottom left;
-  }
-  div.header{
-    height:50px;
-  }
-  span.logo{
-    line-height:50px;
-    height:50px;
-  }
+@media only screen and (max-height:500px){html, body{background-position:bottom left;}
+div.header{height:50px;}
+span.logo{line-height:50px;height:50px;}
 }
